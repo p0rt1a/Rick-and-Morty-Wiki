@@ -5,11 +5,15 @@
   margin: 0;
 }
 :root {
-  --white: #fff;
+  --white: #f1faee;
   --grey: #e1e1e1;
-  --alive: #49f69c;
-  --dead: #ff2f2f;
+  --alive: #5fe9a2;
+  --dead: #ff5858;
   --unknown: #636363;
+  --primary: #e63946;
+  --secondary: #457b9d;
+  --morty: #f9bf1e;
+  --rick: #62a4ab;
 }
 html {
   font-size: 16px;
@@ -23,9 +27,11 @@ section {
 
 h2 {
   font-weight: 500;
+  color: var(--secondary);
 }
 h3 {
   font-weight: 300;
+  color: var(--primary);
 }
 @media only screen and (min-width: 1021px) {
   h1 {
@@ -45,10 +51,28 @@ h3 {
   h1 {
     font-size: 4.5rem;
   }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
 }
 @media only screen and (max-width: 770px) {
   h1 {
     font-size: 3.4rem;
+  }
+  h2 {
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 0.65rem;
+  }
+  h4 {
+    font-size: 0.55rem;
   }
 }
 @media only screen and (max-width: 482px) {
