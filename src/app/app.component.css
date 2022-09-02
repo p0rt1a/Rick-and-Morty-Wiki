@@ -37,8 +37,8 @@
 }
 @media only screen and (min-width: 1021px) {
   .search-input {
-    font-size: 1.4rem;
-    border-radius: 18px;
+    font-size: 1.2rem;
+    border-radius: 15px;
     width: 60%;
     padding: 0.25rem;
   }
@@ -76,4 +76,86 @@
 
   justify-content: center;
   align-items: center;
+
+  width: 90%;
+  margin: 0 auto;
+}
+.card {
+  background-color: var(--grey);
+  border-radius: 12px;
+}
+.card:hover {
+  transition: all 0.3s;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.card:not(:hover) {
+  transition: all 0.3s;
+}
+@media only screen and (min-width: 1021px) {
+  .card:hover {
+    transform: translateY(-20px);
+  }
+  .card {
+    width: 220px;
+  }
+}
+.card-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 12px 12px 0 0;
+}
+
+.card-top {
+  position: relative;
+}
+@media only screen and (min-width: 1021px) {
+  .card-top {
+    height: 260px;
+
+    padding: 10px 10px 0 10px;
+  }
+}
+.card-status {
+  position: absolute;
+  border-radius: 12px;
+}
+.card-status.alive {
+  background-color: var(--alive);
+}
+.card-status.dead {
+  background-color: var(--dead);
+  color: var(--white);
+}
+.card-status.unknown {
+  background-color: var(--unknown);
+  color: var(--white);
+}
+@media only screen and (min-width: 1021px) {
+  .card-status {
+    top: 15px;
+    right: 20px;
+
+    padding: 5px;
+  }
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+@media only screen and (min-width: 1021px) {
+  .card-info {
+    width: 100%;
+    height: 130px;
+  }
 }

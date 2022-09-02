@@ -15,7 +15,12 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.postsService.getItems(this.url).subscribe((response) => {
       this.data = response;
-      console.log(this.data.results);
+    });
+  }
+
+  getByCharacterName(name: string) {
+    this.postsService.getItems(this.url, name).subscribe((response) => {
+      this.data = response;
     });
   }
 }
