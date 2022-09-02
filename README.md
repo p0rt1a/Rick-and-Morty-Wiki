@@ -1,4 +1,4 @@
-To view website: https://p0rt1a.github.io/Rick-and-Morty-Wiki/Rick-and-Morty-Wiki/
+To view website: https://p0rt1a.github.io/Rick-and-Morty-Wiki/
 
 
 
