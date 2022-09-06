@@ -15,9 +15,6 @@
   --morty: #f9bf1e;
   --rick: #62a4ab;
 }
-html {
-  font-size: 16px;
-}
 .font-funny {
   font-family: "Montserrat Alternates", sans-serif;
 }
