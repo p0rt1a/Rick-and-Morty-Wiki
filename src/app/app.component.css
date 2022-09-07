@@ -92,7 +92,7 @@
 }
 @media only screen and (min-width: 482px) {
   .cards {
-    width: 95%;
+    width: 96%;
   }
 }
 .card {
@@ -131,6 +131,15 @@
     width: 180px;
   }
 }
+@media only screen and (max-width: 482px) {
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .card {
+    width: 150px;
+  }
+}
+
 .card-image {
   background-size: cover;
   background-position: center;
@@ -162,6 +171,13 @@
 @media only screen and (max-width: 770px) {
   .card-top {
     height: 190px;
+
+    padding: 10px 10px 0 10px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .card-top {
+    height: 150px;
 
     padding: 10px 10px 0 10px;
   }
