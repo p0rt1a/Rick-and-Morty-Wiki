@@ -22,6 +22,52 @@ section {
   padding: 1.5rem 0;
 }
 
+.btn-primary {
+  background-color: var(--rick);
+  color: var(--white);
+  border: none;
+  transition: all 0.3s;
+}
+.btn-primary:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+@media only screen and (min-width: 1021px) {
+  .btn-primary {
+    border-radius: 12px;
+    font-size: 1.5rem;
+    padding: 10px 10vw;
+  }
+}
+@media only screen and (max-width: 1022px) {
+  .btn-primary {
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 8px 10vw;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .btn-primary {
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 8px 10vw;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .btn-primary {
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 7px 10vw;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .btn-primary {
+    border-radius: 6px;
+    font-size: 0.9rem;
+    padding: 5px 10vw;
+  }
+}
+
 h2 {
   font-weight: 500;
   color: var(--secondary);

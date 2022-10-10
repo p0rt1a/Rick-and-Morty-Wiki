@@ -17,7 +17,7 @@
       <div class="card-top">
         <div
           class="card-image"
-          style="background-image: url({{ item.image }})"
+          [ngStyle]="{ backgroundImage: 'url(' + item.image + ')' }"
         ></div>
         <div class="card-status" [ngClass]="item.status | lowercase">
           <h4>{{ item.status | lowercase }}</h4>
@@ -32,3 +32,8 @@
     </div>
   </div>
 </section>
+
+<div class="font-funny buttons">
+  <button class="btn-primary" (click)="prevPage()">Prev</button>
+  <button class="btn-primary" (click)="nextPage()">Next</button>
+</div>

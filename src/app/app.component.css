@@ -247,3 +247,20 @@
     height: 100px;
   }
 }
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+}
+@media only screen and (min-width: 1021px) {
+  .buttons {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 1022px) {
+  .buttons {
+    gap: 10px;
+  }
+}
